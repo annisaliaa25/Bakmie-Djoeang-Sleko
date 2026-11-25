@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bakmie Djoeang - Bakmie Pasar Sleko Madiun</title>
+  <meta name="description" content="Bakmie Djoeang di Pasar Sleko Madiun. Bakmie, minuman, dan side dish dengan harga bersahabat. Pesan mudah lewat WhatsApp.">
+  <link rel="icon" href="gambar/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Latar hidup: mangkok bakmie yang melayang pelan (diisi oleh script.js) -->
+  <div class="latar-hidup" id="latar-hidup" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="navbar-isi">
+      <a class="logo" href="#beranda">
+        <img class="logo-img" src="gambar/logo.png" alt="Logo Bakmie Djoeang" width="44" height="44">
+        <span>Bakmie Djoeang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="daftar-nav">&#9776;</button>
+      <ul class="nav-links" id="daftar-nav">
+        <li><a href="#beranda" data-halaman="beranda">Beranda</a></li>
+        <li><a href="#menu" data-halaman="menu">Menu</a></li>
+        <li><a href="#testimoni" data-halaman="testimoni">Testimoni</a></li>
+        <li><a href="#faq" data-halaman="faq">FAQ</a></li>
+        <li><a href="#kontak" data-halaman="kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="marquee" aria-label="Info promo">
+    <div class="marquee-jalur">
+      <div class="marquee-grup"><span>Mulai Rp 9.000</span><span>&#9670;</span><span>Pesan lewat WhatsApp</span><span>&#9670;</span><span>Pasar Sleko Lantai 2</span><span>&#9670;</span></div>
+      <div class="marquee-grup" aria-hidden="true"><span>Mulai Rp 9.000</span><span>&#9670;</span><span>Pesan lewat WhatsApp</span><span>&#9670;</span><span>Pasar Sleko Lantai 2</span><span>&#9670;</span></div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== HALAMAN 1: BERANDA ===== -->
+    <section class="halaman" id="beranda" data-judul="Beranda">
+      <header class="hero">
+        <div class="hero-isi">
+          <div class="hero-logo-wrap">
+            <svg class="uap-svg" viewBox="0 0 160 70" aria-hidden="true">
+              <g fill="none" stroke="#f3e7d0" stroke-width="5" stroke-linecap="round">
+                <path class="u1" d="M45 60 C35 45, 55 35, 45 15"/>
+                <path class="u2" d="M80 60 C70 42, 90 32, 80 8"/>
+                <path class="u3" d="M115 60 C105 45, 125 35, 115 15"/>
+              </g>
+            </svg>
+            <img class="hero-logo" src="gambar/logo.png" alt="Logo Bakmie Djoeang" width="150" height="150">
+          </div>
+          <p class="hero-label">Kedai Bakmie Madiun</p>
+          <h1>Bakmie Djoeang</h1>
+          <p class="hero-alamat">Citra rasa bakmie perdjoeangan</p>
+          <p class="hero-text">Semangkuk bakmie hangat dengan harga bersahabat di Pasar Sleko, Lantai 2 (Sisi Selatan), Madiun. Mulai dari Rp 9.000, cocok untuk makan siang, jajan sore, atau bawa pulang.</p>
+          <button class="btn btn-pesan denyut" type="button" data-pesan="umum">Pesan Sekarang</button>
+          <p class="hero-note">Pesan lewat WhatsApp, dibalas cepat</p>
+        </div>
+      </header>
+
+      <section class="section reveal">
+        <h2>Tentang Kedai</h2>
+        <p class="rata-tengah">Bakmie Djoeang menyajikan bakmie, minuman, dan side dish dengan harga bersahabat, spesial sejak 2024. Lihat <a href="#menu">daftar menu lengkap</a> atau baca <a href="#testimoni">ulasan pelanggan</a>.</p>
+        <figure class="foto-semua-menu">
+          <img src="gambar/semua-menu.jpg" alt="Aneka mie Bakmie Djoeang: bakmie lebar dan kecil, biasa dan spesial, serta pangsit rebus" width="1600" height="900" loading="lazy">
+          <figcaption>Bakmie lebar dan kecil, biasa dan spesial, lengkap dengan kuah dan sambalnya</figcaption>
+        </figure>
+      </section>
+
+      <section class="section section-alt" id="cara-pesan">
+        <h2 class="reveal">Cara Pesan</h2>
+        <ol class="langkah">
+          <li class="reveal"><strong>Pilih menu</strong> bakmie, minuman, atau side dish di halaman Menu.</li>
+          <li class="reveal"><strong>Tekan tombol plus (+)</strong> pada menu yang kamu mau, lalu buka Keranjang. Belum mau pesan? Tekan ikon hati untuk menyimpannya dulu di Keranjang Favorit.</li>
+          <li class="reveal"><strong>Isi nama dan nomor telepon</strong>, pilih Dine In atau Take Away, lalu tekan Pesan via WhatsApp. Daftar pesananmu terisi otomatis, tinggal kirim.</li>
+          <li class="reveal"><strong>Bayar lewat QRIS.</strong> Barcode QRIS muncul setelah pesanan dikirim. Scan, bayar sesuai total, lalu kirim bukti bayar di chat WhatsApp.</li>
+          <li class="reveal"><strong>Datang atau ambil pesanan</strong> di Pasar Sleko Lantai 2, Sisi Selatan.</li>
+        </ol>
+        <p class="rata-tengah"><a class="btn btn-kecil tautan-tombol" href="#menu">Lihat Menu</a></p>
+      </section>
+    </section>
+
+    <!-- ===== HALAMAN 2: MENU (SEMUA MENU) ===== -->
+    <section class="halaman" id="menu" data-judul="Menu dan Harga">
+      <section class="section">
+        <h2>Menu dan Harga</h2>
+        <p class="rata-tengah ket">Tekan tombol plus (+) untuk memasukkan ke keranjang, lalu kirim pesananmu lewat WhatsApp.</p>
+
+      <h3 class="kategori kat-bakmie reveal">Bakmie</h3>
+      <ul class="menu-list">
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/bakmie-lebar.jpg" aria-label="Perbesar foto Bakmie Djoeang Lebar">
+            <img class="foto-menu" src="gambar/bakmie-lebar.jpg" alt="Foto Bakmie Djoeang Lebar" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Bakmie Djoeang Lebar</h4>
+              <p class="deskripsi">Isi: mie lebar, pakcoy, pangsit goreng, bawang goreng, dan taburan ayam. Rasanya gurih.</p>
+              <span class="harga">Rp 9.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Bakmie Djoeang Lebar" data-animasi="mie-lebar" data-harga="9000" aria-label="Tambah Bakmie Djoeang Lebar ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/bakmie-lebar-spesial.jpg" aria-label="Perbesar foto Bakmie Djoeang Lebar Spesial">
+            <img class="foto-menu" src="gambar/bakmie-lebar-spesial.jpg" alt="Foto Bakmie Djoeang Lebar Spesial" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Bakmie Djoeang Lebar Spesial</h4>
+              <p class="deskripsi">Isi: mie lebar, pakcoy, pangsit goreng, bawang goreng, dan taburan ayam, ditambah pangsit rebus dan jamur kancing. Rasanya gurih.</p>
+              <span class="harga">Rp 14.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Bakmie Djoeang Lebar Spesial" data-animasi="mie-lebar-spesial" data-harga="14000" aria-label="Tambah Bakmie Djoeang Lebar Spesial ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/bakmie-kecil.jpg" aria-label="Perbesar foto Bakmie Djoeang Kecil">
+            <img class="foto-menu" src="gambar/bakmie-kecil.jpg" alt="Foto Bakmie Djoeang Kecil" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Bakmie Djoeang Kecil</h4>
+              <p class="deskripsi">Isi: mie kecil, pakcoy, pangsit goreng, bawang goreng, dan taburan ayam. Rasanya gurih.</p>
+              <span class="harga">Rp 9.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Bakmie Djoeang Kecil" data-animasi="mie-kecil" data-harga="9000" aria-label="Tambah Bakmie Djoeang Kecil ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/bakmie-kecil-spesial.jpg" aria-label="Perbesar foto Bakmie Djoeang Kecil Spesial">
+            <img class="foto-menu" src="gambar/bakmie-kecil-spesial.jpg" alt="Foto Bakmie Djoeang Kecil Spesial" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Bakmie Djoeang Kecil Spesial</h4>
+              <p class="deskripsi">Isi: mie kecil, pakcoy, pangsit goreng, bawang goreng, dan taburan ayam, ditambah pangsit rebus dan jamur kancing. Rasanya gurih.</p>
+              <span class="harga">Rp 14.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Bakmie Djoeang Kecil Spesial" data-animasi="mie-kecil-spesial" data-harga="14000" aria-label="Tambah Bakmie Djoeang Kecil Spesial ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="kategori kat-minuman reveal">Minuman</h3>
+      <ul class="menu-list">
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/air-mineral.jpg" aria-label="Perbesar foto Air Mineral">
+            <img class="foto-menu" src="gambar/air-mineral.jpg" alt="Foto Air Mineral" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Air Mineral</h4>
+              <span class="harga">Rp 5.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Air Mineral" data-animasi="air" data-harga="5000" aria-label="Tambah Air Mineral ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/teh.jpg" aria-label="Perbesar foto Teh">
+            <img class="foto-menu" src="gambar/teh.jpg" alt="Foto Teh" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Teh</h4>
+              <span class="harga">Rp 4.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Teh" data-animasi="teh" data-harga="4000" aria-label="Tambah Teh ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/teh-lemon.jpg" aria-label="Perbesar foto Teh Lemon">
+            <img class="foto-menu" src="gambar/teh-lemon.jpg" alt="Foto Teh Lemon" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Teh Lemon</h4>
+              <span class="harga">Rp 6.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Teh Lemon" data-animasi="teh-lemon" data-harga="6000" aria-label="Tambah Teh Lemon ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/teh-kampul.jpg" aria-label="Perbesar foto Teh Kampul">
+            <img class="foto-menu" src="gambar/teh-kampul.jpg" alt="Foto Teh Kampul" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Teh Kampul</h4>
+              <span class="harga">Rp 6.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Teh Kampul" data-animasi="teh-kampul" data-harga="6000" aria-label="Tambah Teh Kampul ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/teh-tarik.jpg" aria-label="Perbesar foto Teh Tarik">
+            <img class="foto-menu" src="gambar/teh-tarik.jpg" alt="Foto Teh Tarik" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Teh Tarik</h4>
+              <span class="harga">Rp 7.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Teh Tarik" data-animasi="teh-tarik" data-harga="7000" aria-label="Tambah Teh Tarik ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/jeruk.jpg" aria-label="Perbesar foto Jeruk">
+            <img class="foto-menu" src="gambar/jeruk.jpg" alt="Foto Jeruk" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Jeruk</h4>
+              <span class="harga">Rp 5.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Jeruk" data-animasi="jeruk" data-harga="5000" aria-label="Tambah Jeruk ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="kategori kat-side reveal">Side Dish</h3>
+      <ul class="menu-list">
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/pangsit-goreng.jpg" aria-label="Perbesar foto Pangsit Goreng">
+            <img class="foto-menu" src="gambar/pangsit-goreng.jpg" alt="Foto Pangsit Goreng" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Pangsit Goreng</h4>
+              <span class="harga">Rp 8.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Pangsit Goreng" data-animasi="pangsit-goreng" data-harga="8000" aria-label="Tambah Pangsit Goreng ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/pangsit-rebus.jpg" aria-label="Perbesar foto Pangsit Rebus">
+            <img class="foto-menu" src="gambar/pangsit-rebus.jpg" alt="Foto Pangsit Rebus" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Pangsit Rebus</h4>
+              <span class="harga">Rp 8.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Pangsit Rebus" data-animasi="pangsit-rebus" data-harga="8000" aria-label="Tambah Pangsit Rebus ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+        <li class="menu-item reveal">
+          <button class="foto-tombol" type="button" data-besar="gambar/bakso-goreng.jpg" aria-label="Perbesar foto Bakso Goreng">
+            <img class="foto-menu" src="gambar/bakso-goreng.jpg" alt="Foto Bakso Goreng" width="1200" height="960" loading="lazy">
+          </button>
+          <div class="menu-baris">
+            <div class="menu-info">
+              <h4>Bakso Goreng</h4>
+              <span class="harga">Rp 8.000</span>
+            </div>
+            <button class="btn btn-kecil btn-plus" type="button" data-tambah="Bakso Goreng" data-animasi="bakso-goreng" data-harga="8000" aria-label="Tambah Bakso Goreng ke keranjang"><svg class="ikon-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span class="sr-baca">Tambah</span></button>
+          </div>
+        </li>
+      </ul>
+
+      </section>
+    </section>
+
+    <!-- ===== HALAMAN 3: TESTIMONI ===== -->
+    <section class="halaman" id="testimoni" data-judul="Testimoni">
+      <section class="section">
+        <h2>Kata Pelanggan</h2>
+        <p class="sumber-ulasan">Ulasan asli dari Google Maps</p>
+        <div class="testimoni-grid">
+        <blockquote class="reveal">
+          <div class="bintang" aria-label="Bintang 5 dari 5"><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span></div>
+          <p>Rasanya enak banget sampai lupa mau foto. Dari semua racikan mie disini enak banget apalagi pangsit nya yang rebus.</p>
+          <cite>Absence O, Local Guide</cite>
+        </blockquote>
+        <blockquote class="reveal">
+          <div class="bintang" aria-label="Bintang 5 dari 5"><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span></div>
+          <p>Mie-nya enak, pelayanan baik. Tempat unik ya di Pasar Sleko lantai 2.</p>
+          <cite>R. Setiahadi, Local Guide</cite>
+        </blockquote>
+        <blockquote class="reveal">
+          <div class="bintang" aria-label="Bintang 4 dari 5"><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b kosong">&#9733;</span></div>
+          <p>Mie nya enak, harganya juga terjangkau.</p>
+          <cite>Ca's Archive, Local Guide</cite>
+        </blockquote>
+        <blockquote class="reveal">
+          <div class="bintang" aria-label="Bintang 4 dari 5"><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b">&#9733;</span><span class="b kosong">&#9733;</span></div>
+          <p>Untuk makanannya enak. Dari tekstur mie, rasa mie, dan kuah okee. Untuk kuah sudah segar dan gurih.</p>
+          <cite>Iqsan Ar, Local Guide</cite>
+        </blockquote>
+        </div>
+        <p class="rata-tengah jarak-atas"><a class="btn btn-kecil tautan-tombol" href="#menu">Coba Menunya</a></p>
+      </section>
+    </section>
+
+    <!-- ===== HALAMAN 4: FAQ ===== -->
+    <section class="halaman" id="faq" data-judul="FAQ">
+      <section class="section">
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <p class="rata-tengah ket">Belum ketemu jawabannya? Tanyakan langsung lewat WhatsApp.</p>
+        <div class="faq-daftar">
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-1">Bagaimana cara memesan?</button></h3>
+            <div class="faq-jawab" id="faq-1"><div class="faq-isi"><p>Buka halaman Menu, tekan tombol plus (+) pada menu yang kamu mau, lalu buka Keranjang, isi nama dan nomor teleponmu, kemudian tekan Pesan via WhatsApp. Daftar pesananmu akan terisi otomatis di chat WhatsApp kami (0823-1248-8235), tinggal kirim.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-2">Di mana lokasi kedai?</button></h3>
+            <div class="faq-jawab" id="faq-2"><div class="faq-isi"><p>Kami ada di Pasar Sleko Madiun, Lantai 2 (Sisi Selatan), Pandean, Kec. Taman, Kota Madiun, Jawa Timur 62122. Petunjuk arah ada di halaman Kontak lewat tautan Google Maps.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-3">Kapan jam bukanya?</button></h3>
+            <div class="faq-jawab" id="faq-3"><div class="faq-isi"><p>Kami buka Kamis sampai Minggu, pukul 11.00 sampai 21.00.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-4">Berapa kisaran harganya?</button></h3>
+            <div class="faq-jawab" id="faq-4"><div class="faq-isi"><p>Bakmie mulai dari Rp 9.000, minuman mulai dari Rp 4.000, dan side dish Rp 8.000. Daftar lengkapnya ada di halaman Menu.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-5">Apa bedanya bakmie lebar, kecil, dan spesial?</button></h3>
+            <div class="faq-jawab" id="faq-5"><div class="faq-isi"><p>Bakmie Djoeang tersedia dalam pilihan lebar dan kecil, masing-masing ada versi biasa (Rp 9.000) dan spesial (Rp 14.000). Versi biasa berisi mie, pakcoy, pangsit goreng, bawang goreng, dan taburan ayam yang gurih. Versi spesial ditambah pangsit rebus dan jamur kancing.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-6">Apakah Bakmie Djoeang halal?</button></h3>
+            <div class="faq-jawab" id="faq-6"><div class="faq-isi"><p>Informasi sertifikat halal kami ada di halaman Kontak.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-8">Bisa makan di tempat atau dibawa pulang, dan bayarnya bagaimana?</button></h3>
+            <div class="faq-jawab" id="faq-8"><div class="faq-isi"><p>Bisa dua-duanya. Di Keranjang kamu tinggal memilih Dine In (makan di tempat) atau Take Away (dibawa pulang). Pembayaran hanya lewat QRIS: setelah pesanan dikirim lewat WhatsApp, barcode QRIS muncul di layar. Scan, bayar sesuai total, lalu kirim bukti bayarnya di chat WhatsApp.</p></div></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3 class="faq-tanya"><button class="faq-tombol" type="button" aria-expanded="false" aria-controls="faq-7">Bisa pesan dalam jumlah banyak atau minta diantar?</button></h3>
+            <div class="faq-jawab" id="faq-7"><div class="faq-isi"><p>Silakan tanyakan langsung lewat WhatsApp di 0823-1248-8235 supaya bisa kami bantu sesuai kebutuhanmu.</p></div></div>
+          </div>
+        </div>
+        <p class="rata-tengah jarak-atas"><button class="btn btn-pesan" type="button" data-pesan="umum">Tanya via WhatsApp</button></p>
+      </section>
+    </section>
+
+    <!-- ===== HALAMAN 5: KONTAK (ALAMAT, SOSMED, TENTANG USAHA, SERTIFIKAT HALAL) ===== -->
+    <section class="halaman" id="kontak" data-judul="Kontak">
+      <section class="section">
+        <h2>Kontak</h2>
+        <p class="rata-tengah ket">Mau tanya menu atau pesan dalam jumlah banyak? Hubungi kami.</p>
+
+        <div class="kartu-kontak-grid">
+          <article class="kartu-kontak reveal">
+            <h3>Alamat</h3>
+            <p>Pasar Sleko Madiun, Lantai 2 (Sisi Selatan)<br>Pandean, Kec. Taman, Kota Madiun<br>Jawa Timur 62122</p>
+            <p class="jam"><strong>Jam buka:</strong> Kamis - Minggu, 11.00 - 21.00</p>
+            <a class="link-peta" href="https://www.google.com/maps/search/?api=1&query=Pasar+Sleko+Madiun" target="_blank" rel="noopener">Lihat di Google Maps</a>
+          </article>
+
+          <article class="kartu-kontak reveal">
+            <h3>WhatsApp</h3>
+            <p>0823-1248-8235</p>
+            <button class="btn btn-pesan" type="button" data-pesan="umum">Chat via WhatsApp</button>
+          </article>
+
+          <article class="kartu-kontak reveal">
+            <h3>Media Sosial</h3>
+            <ul class="daftar-sosmed">
+              <li>Instagram: <a href="https://www.instagram.com/bakmie.djoeang" target="_blank" rel="noopener">@bakmie.djoeang</a></li>
+              <li>TikTok: <a href="https://www.tiktok.com/@bakmiedjoeang" target="_blank" rel="noopener">@bakmiedjoeang</a></li>
+            </ul>
+          </article>
+
+          <article class="kartu-kontak reveal">
+            <h3>Tentang Usaha</h3>
+            <p>Bakmie Djoeang adalah kedai bakmie di Pasar Sleko Madiun, Lantai 2 (Sisi Selatan), spesial sejak 2024. Kami menyajikan bakmie, minuman, dan side dish dengan harga bersahabat. Pesanan bisa dibuat dengan mudah lewat WhatsApp.</p>
+          </article>
+
+          <article class="kartu-kontak kartu-halal reveal">
+            <h3>Sertifikat Halal</h3>
+            <p class="lencana-halal">Bersertifikat Halal</p>
+            <p>No. sertifikat: <strong>ID35410021310150425</strong></p>
+            <button class="foto-tombol qr-halal-tombol" type="button" data-besar="gambar/barcode-halal.png" aria-label="Perbesar barcode sertifikat halal">
+              <img class="qr-halal" src="gambar/barcode-halal.png" alt="Barcode sertifikat halal Bakmie Djoeang" width="180" height="180" loading="lazy">
+            </button>
+            <p class="qr-halal-ket">Scan barcode ini untuk melihat sertifikat halal</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Bakmie Djoeang, Pasar Sleko Madiun, Lantai 2 (Sisi Selatan)</p>
+    <p class="hak-cipta">&copy; <span id="tahun">2026</span> Bakmie Djoeang</p>
+  </footer>
+
+  <button class="wa-mengambang" type="button" data-pesan="umum" aria-label="Pesan lewat WhatsApp">Pesan via WA</button>
+
+  <button class="favorit-tombol" id="favorit-buka" type="button" hidden aria-label="Buka keranjang favorit">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C1 8.4 2.9 5 6.2 5c2 0 3.6 1.1 4.6 2.7h.4C12.2 6.1 13.800 5 15.800 5c3.300 0 5.200 3.400 3.800 6.700C19.500 16.400 12 21 12 21z" fill="currentColor"/></svg>
+    Favorit (<span id="f-jumlah">0</span>)
+  </button>
+
+  <button class="keranjang-tombol" id="keranjang-buka" type="button" hidden aria-label="Buka keranjang pesanan">
+    Keranjang (<span id="k-jumlah">0</span>) - <span id="k-total">Rp 0</span>
+  </button>
+
+  <div class="keranjang-panel" id="favorit-panel" hidden role="dialog" aria-modal="true" aria-label="Keranjang favorit">
+    <div class="keranjang-kartu favorit-kartu">
+      <div class="keranjang-kepala">
+        <h3>Keranjang Favorit</h3>
+        <button class="k-tutup" type="button">Tutup</button>
+      </div>
+      <p class="f-ket">Menu yang kamu simpan dulu. Tekan Pesan untuk memasukkannya ke Keranjang Pesanan.</p>
+      <ul class="keranjang-daftar" id="favorit-daftar"></ul>
+      <p class="keranjang-kosong" id="favorit-kosong">Belum ada favorit. Tekan ikon hati pada menu untuk menyimpannya.</p>
+      <div class="keranjang-aksi" id="favorit-aksi">
+        <button class="btn btn-kecil" id="favorit-semua" type="button">Tambahkan semua ke pesanan</button>
+        <button class="btn k-kosongkan" id="favorit-kosongkan" type="button">Kosongkan favorit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="keranjang-panel" id="keranjang-panel" hidden role="dialog" aria-modal="true" aria-label="Keranjang pesanan">
+    <div class="keranjang-kartu">
+      <div class="keranjang-kepala">
+        <h3>Keranjang Pesanan</h3>
+        <button class="k-tutup" type="button">Tutup</button>
+      </div>
+      <ul class="keranjang-daftar" id="keranjang-daftar"></ul>
+      <p class="keranjang-kosong" id="keranjang-kosong">Keranjang masih kosong. Pilih menu dulu, ya.</p>
+      <div class="keranjang-total"><span>Total</span> <strong id="k-total-panel">Rp 0</strong></div>
+      <label class="k-label" for="nama-pemesan">Atas nama</label>
+      <input class="k-input" id="nama-pemesan" type="text" autocomplete="name" placeholder="Nama kamu" aria-describedby="galat-nama">
+      <p class="k-galat" id="galat-nama" role="alert" hidden></p>
+      <label class="k-label" for="telp-pemesan">Nomor telepon / WhatsApp</label>
+      <input class="k-input" id="telp-pemesan" type="tel" inputmode="numeric" autocomplete="tel" placeholder="Contoh: 081234567890" aria-describedby="galat-telp">
+      <p class="k-galat" id="galat-telp" role="alert" hidden></p>
+      <fieldset class="k-grup k-jenis" id="grup-jenis" aria-describedby="galat-jenis">
+        <legend class="k-label">Makan di mana?</legend>
+        <div class="k-pilihan">
+          <label class="k-opsi"><input type="radio" name="jenis-pesanan" value="Dine In"><span><b>Dine In</b><small>Makan di tempat</small></span></label>
+          <label class="k-opsi"><input type="radio" name="jenis-pesanan" value="Take Away"><span><b>Take Away</b><small>Dibawa pulang</small></span></label>
+        </div>
+        <p class="k-galat" id="galat-jenis" role="alert" hidden></p>
+      </fieldset>
+      <div class="k-grup k-ambil" id="grup-ambil" hidden>
+        <label class="k-label" for="jam-ambil">Mau diambil jam berapa?</label>
+        <select class="k-input" id="jam-ambil" aria-describedby="galat-ambil"><option value="">Pilih jam pengambilan</option></select>
+        <p class="k-galat" id="galat-ambil" role="alert" hidden></p>
+        <p class="k-ambil-ket">Kedai buka pukul 11.00 sampai 21.00.</p>
+      </div>
+      <div class="k-grup k-bayar">
+        <span class="k-label">Pembayaran</span>
+        <div class="k-bayar-kotak"><span class="k-bayar-lencana">QRIS</span><span>Pembayaran hanya lewat QRIS. Barcode muncul setelah pesananmu dikirim.</span></div>
+      </div>
+      <div class="keranjang-aksi">
+        <button class="btn btn-pesan" id="k-kirim" type="button">Pesan via WhatsApp</button>
+        <button class="btn k-kosongkan" id="k-kosongkan" type="button">Kosongkan</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="qris-panel" id="qris-panel" hidden role="dialog" aria-modal="true" aria-labelledby="qris-judul">
+    <div class="qris-kartu">
+      <h3 id="qris-judul">Bayar dengan QRIS</h3>
+      <p class="qris-ket">Pesananmu (<span id="qris-jenis"></span>) sudah disiapkan di WhatsApp. Scan barcode ini untuk membayar.</p>
+      <p class="qris-antrian">Nomor antrian kamu <strong id="qris-antrian"></strong></p>
+      <p class="qris-total">Total bayar <strong id="qris-total">Rp 0</strong></p>
+      <img class="qris-gambar" src="gambar/qris.jpg" alt="Barcode QRIS Bakmie Djoeang" width="618" height="788">
+      <p class="qris-catatan">Masukkan nominal sesuai total di atas, lalu kirim bukti bayar lewat WhatsApp.</p>
+      <div class="qris-aksi">
+        <button class="btn btn-pesan" id="qris-bukti" type="button">Kirim bukti bayar via WhatsApp</button>
+        <a class="btn btn-kecil tautan-tombol" href="gambar/qris.jpg" download="QRIS-Bakmie-Djoeang.jpg">Simpan barcode QRIS</a>
+        <button class="btn k-kosongkan" id="qris-selesai" type="button">Selesai</button>
+      </div>
+      <button class="k-tutup qris-tutup" type="button">Tutup</button>
+    </div>
+  </div>
+
+  <!-- FAQ di sisi kiri (isinya disalin otomatis dari halaman FAQ) -->
+  <button class="faq-samping" id="faq-samping-buka" type="button" aria-label="Buka FAQ, pertanyaan yang sering ditanyakan" aria-expanded="false" aria-controls="faq-samping-panel">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 13c-3-3 2-6-1-10M32 13c-3-3 2-6-1-10M44 13c-3-3 2-6-1-10" stroke="#b89d78" fill="none" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="29" rx="21" ry="9" fill="#f6e3b4" stroke="#c9a24d" stroke-width="2"/><path d="M18 27c5-6 9 2 14-3s9 3 14-1" stroke="#e0b85a" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M45 8l-9 22M50 10l-9 22" stroke="#5a3b2a" stroke-width="2.6" stroke-linecap="round"/><path d="M12 31C12 53 23 61 32 61S52 53 52 31Z" fill="#a32a2a" stroke="#6e1818" stroke-width="2.5" stroke-linejoin="round"/><rect x="8" y="29" width="48" height="6" rx="3" fill="#c9a24d"/><circle cx="25" cy="44" r="2.6" fill="#3b2a22"/><circle cx="39" cy="44" r="2.6" fill="#3b2a22"/><circle cx="20" cy="50" r="3" fill="#f49696"/><circle cx="44" cy="50" r="3" fill="#f49696"/><path d="M28 50q4 5 8 0" stroke="#3b2a22" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span>FAQ</span>
+  </button>
+  <div class="faq-samping-panel" id="faq-samping-panel" hidden role="dialog" aria-modal="true" aria-labelledby="faq-samping-judul">
+    <div class="faq-samping-kartu">
+      <div class="faq-samping-kepala">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 13c-3-3 2-6-1-10M32 13c-3-3 2-6-1-10M44 13c-3-3 2-6-1-10" stroke="#b89d78" fill="none" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="29" rx="21" ry="9" fill="#f6e3b4" stroke="#c9a24d" stroke-width="2"/><path d="M18 27c5-6 9 2 14-3s9 3 14-1" stroke="#e0b85a" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M45 8l-9 22M50 10l-9 22" stroke="#5a3b2a" stroke-width="2.6" stroke-linecap="round"/><path d="M12 31C12 53 23 61 32 61S52 53 52 31Z" fill="#a32a2a" stroke="#6e1818" stroke-width="2.5" stroke-linejoin="round"/><rect x="8" y="29" width="48" height="6" rx="3" fill="#c9a24d"/><circle cx="25" cy="44" r="2.6" fill="#3b2a22"/><circle cx="39" cy="44" r="2.6" fill="#3b2a22"/><circle cx="20" cy="50" r="3" fill="#f49696"/><circle cx="44" cy="50" r="3" fill="#f49696"/><path d="M28 50q4 5 8 0" stroke="#3b2a22" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+        <h3 id="faq-samping-judul">FAQ</h3>
+        <button class="k-tutup" type="button">Tutup</button>
+      </div>
+      <p class="faq-samping-ket">Pertanyaan yang sering ditanyakan. Ketuk untuk membuka jawabannya.</p>
+      <div class="faq-samping-daftar" id="faq-samping-daftar"></div>
+      <a class="faq-samping-lengkap" href="#faq" data-halaman="faq">Buka halaman FAQ lengkap</a>
+    </div>
+  </div>
+
+  <div class="tk-panel" id="tk-panel" hidden role="dialog" aria-modal="true" aria-labelledby="tk-judul">
+    <div class="tk-kartu">
+      <img class="tk-gif" id="tk-gif" src="gambar/terima-kasih.gif" alt="Maskot mangkok bakmie tersenyum dan melambai" width="360" height="360">
+      <h3 id="tk-judul">Terima kasih!</h3>
+      <p class="tk-teks">Terima kasih sudah memesan di Bakmie Djoeang. Pesananmu kami tunggu, selamat menikmati bakmie hangat!</p>
+      <p class="tk-ringkas">Nomor antrian <strong id="tk-antrian"></strong><span id="tk-info"></span></p>
+      <button class="btn btn-pesan" id="tk-tutup" type="button">Tutup</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="mie-hujan" id="mie-hujan" aria-hidden="true"></div>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto menu diperbesar">
+    <button class="lightbox-tutup" type="button">Tutup</button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
